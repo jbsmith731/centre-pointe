@@ -1,0 +1,115 @@
+/*
+
+-------------------------------------------------------------
+
+HERO STYLES
+
+*/
+
+
+.hero {
+  height: 100vh;
+  width: 100vw;
+  position: relative;
+	background-color: #f8f8f8;
+
+  .text {
+    padding: 2rem;
+    position: relative;
+
+    @include breakpoint(small) { padding: 1.5rem; }
+  }
+
+  .date {
+    padding-left: 2.5rem;
+    position: relative;
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 1.25rem;
+      margin: auto;
+      height: 4rem;
+      width: 1px;
+      background-color: $black;
+
+      @include breakpoint(small) { height: 3rem; }
+    }
+  }
+
+  .date span {
+    display: block;
+    text-align: center;
+    font-size: 1.5rem;
+    line-height: 1;
+
+    @include breakpoint(small) { font-size: 1rem; }
+
+    &.sixteen {
+      letter-spacing: 4px;
+      padding-left: 4px;
+    }
+  }
+
+  .border-left, .border-right, .border-top, .border-bottom {
+    display: block;
+    background-color: $black;
+    position: absolute;
+  }
+
+  .border-left, .border-right {
+    width: 2px;
+    height: 0;
+    transition: all 0.2s ease;
+  }
+
+  .border-top, .border-bottom {
+    height: 2px;
+    width: 0;
+    transition: all 0.8s ease;
+    transition-delay: 0.2s;
+  }
+
+  .border-top {
+    top: 0;
+    left: 0;
+  }
+
+  .border-right {
+    top: 0;
+    right: 0;
+  }
+
+  .border-bottom {
+    bottom: 0;
+    right: 0;
+  }
+
+  .border-left {
+    bottom: 0;
+    left: 0;
+  }
+
+  .location {
+    position: absolute;
+    right: 0;
+    bottom: 2rem;
+    left: 0;
+    margin: auto;
+    width: 4.5rem;
+    font-size: 12px;
+  }
+} // end .hero
+
+.animate-in .hero {
+
+  .border-left, .border-right {
+    height: 100%;
+  }
+
+  .border-top, .border-bottom {
+    width: 100%;
+  }
+}
