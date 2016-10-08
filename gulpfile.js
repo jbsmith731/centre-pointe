@@ -62,7 +62,7 @@ gulp.task('move', function() {
 })
 
 
-// Build Sequences
+// SEQUENCES
 // ---------------
 
 gulp.task('build', function (callback) {
@@ -76,3 +76,11 @@ gulp.task('default', function (callback) {
 		callback
 	)
 })
+
+
+// DEPLOY!!!!!!
+// ---------------
+gulp.task('deploy', function() {
+  return gulp.src('./dist/**/*')
+    .pipe(ghPages());
+});
