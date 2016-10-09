@@ -6,6 +6,14 @@ var centrePoint = (function($) {
 			$('body').addClass('animate-in');
 		}, 250);
 
+		var setVideoSrc = function(format) {
+			var video = $('video.video');
+
+			video.append('<source src="assets/video/' + video.attr('data-src') + '.' + format + '" type="video/' + format + '">');
+		}
+
+		setVideoSrc('mp4');
+
   } // end init
 
 return {
