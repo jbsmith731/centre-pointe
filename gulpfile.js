@@ -35,7 +35,8 @@ gulp.task('sass', function(){
 
 gulp.task('browserSync', function(){
 	 browserSync.init({
-        server: "./app"
+        server: "./app",
+				reloadOnRestart: false
     });
 })
 
