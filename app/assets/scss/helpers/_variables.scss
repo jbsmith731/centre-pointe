@@ -9,15 +9,12 @@ VARIABLES
 // Descriptive Colors
 $black   : #222222;
 $white   : #ffffff;
-
-// Functional Colors
-// $primary-color   : $blue;
-$secondary-color : null;
+$red     : #EF4136;
 
 
 // Font weights
 $light 	 : 100;
-$regular : 300;
+$regular : 400;
 $medium  : 500;
 $bold    : 700;
 
@@ -28,19 +25,13 @@ $primary-font-weight : $regular;
 $primary-font-size   : 16px;
 $primary-font-color  : $black;
 $primary-link-color  : $black;
-$primary-line-height : 1.5;
+$primary-line-height : 2;
 
 
 // Columns
 $col-groups  : 2 3 4;
 $col-gutter  : 30px;
 $col-offsets : false;
-
-
-// Buttons
-$btn-height       : 46px;
-$btn-radius       : 2px;
-$btn-side-padding : 40px;
 
 
 // breakpoints

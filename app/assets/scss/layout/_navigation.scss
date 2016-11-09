@@ -1,7 +1,22 @@
-/* 
+/*
 
 -------------------------------------------------------------
 
 NAVIGATION
 
 */
+
+
+nav {
+  color: white;
+
+  @include breakpoint(small) { display: none; }
+
+  a {
+    @extend .caps;
+
+    &:hover { opacity: 0.75; }
+  }
+
+  a:not(:first-of-type) { margin-left: 48px; }
+}

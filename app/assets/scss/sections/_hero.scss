@@ -40,56 +40,23 @@ HERO STYLES
     right: 0;
     bottom: 0;
     left: 0;
-    background-color: rgba($black, 0.2);
+    background-color: rgba($black, 0.4);
     z-index: 2;
   }
 
   .text {
     position: relative;
     z-index: 9999;
-  }
-
-  h2 {
-    text-align: center;
-    margin-top: 1.5rem;
-    opacity: 0;
-    transform: translateY(3rem);
-    transition: all 1s $easeOutQuint;
-    transition-delay: 0.1s;
-
-    @include breakpoint(small) { margin-top: 0; }
-  }
-
-  .logo {
-    opacity: 0;
-    transform: translateY(3rem);
-    transition: all 1s $easeOutQuint;
-
-    img {
-      width: 4.5rem;
-      height: 4.5rem;
-      margin-right: 1.5rem;
-
-      @include breakpoint(small) { margin: auto; }
-    }
-
-    h1 {
-      line-height: 4.5rem;
-
-      @include breakpoint(small) { margin: auto; }
-    }
-  }
-
-  .location {
-    position: absolute;
-    right: 0;
-    bottom: 2rem;
-    left: 0;
-    text-align: center;
-    z-index: 99;
     color: $white;
-    font-weight: 400;
+    text-align: center;
+    width: 90%;
+    max-width: 448px;
+
+    .btn { margin-top: 2rem; }
   }
+
+
+
 
 
 } // end .hero

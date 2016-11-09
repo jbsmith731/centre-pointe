@@ -6,7 +6,9 @@ GLOBAL
 
 */
 
-
+* {
+	box-sizing: border-box;
+}
 body {
 	padding:0px;
 	margin:0px;
@@ -33,6 +35,8 @@ body.body-modal-open { overflow:hidden; }
 /* general */
 
 img { max-width:100%; }
+
+[aria-hidden="true"] { visibility: hidden; }
 
 
 // % for @extends

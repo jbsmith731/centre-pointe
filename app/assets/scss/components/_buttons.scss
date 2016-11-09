@@ -8,16 +8,18 @@ BUTTONS
 
 
 .btn {
+  @extend .caps;
   display: inline-block;
-  line-height: $btn-height;
-  padding: 0 $btn-side-padding;
-  border-radius: $btn-radius;
-  background-color: $primary-color;
+  line-height: 3.5rem;
+  padding: 0 3rem;
+  background-color: transparent;
   color: $white;
   text-decoration: none;
-  transition: background-color 0.3s $easeOutQuint;
+  border: 1px solid $white;
+  transition: all 0.3s $easeOutQuint;
 
   &:hover {
-    background-color: darken($primary-color, 5%);
+    background-color: $white;
+    color: $black;
   }
 }

@@ -34,28 +34,61 @@
 
 	<body>
 
-		<div class="hero flex justify-center align-center">
-
-			<div class="video-container">
-				<video class="video" loop autoplay="true" preload="auto" muted="true" data-src="cpc-hero">
-				</video>
+		<header>
+			<div class="logo">
+				<img src="assets/img/cpc-logo.svg">
 			</div>
 
-			<div class="text">
+			<nav class="nav">
+				<a href="">Who we are</a>
+				<a href="">Leadership</a>
+				<a href="">Give</a>
+				<a href="">Get connected</a>
+			</nav>
 
-				<div class="logo flex row">
-					<img src="assets/img/cpc-logo.svg" />
-					<h1>CentrePointe.Church</h1>
+			<a href="" class="burger">
+				<svg width="24px" height="24px">
+					<rect id="top" x="0" y="5" width="24px" height="2px" fill="#ffffff"/>
+					<rect id="middle" x="0" y="11" width="24px" height="2px" fill="#ffffff"/>
+					<rect id="bottom" x="0" y="17" width="24px" height="2px" fill="#ffffff"/>
+				</svg>
+			</a>
+
+		</header>
+
+		<main>
+
+			<section class="hero flex justify-center align-center">
+
+				<div class="video-container">
+					<video class="video" loop autoplay="true" preload="auto" muted="true" data-src="cpc-hero">
+					</video>
 				</div>
 
-				<h2>March 2017</h2>
+				<div class="text">
+					<h1>Hope is Alive</h1>
+					<p>Centre Pointe Church is a new start church located in
+						Ashland, Kentucky launching March 2017.
+					</p>
+					<a class="btn" href="">Get Connected</a>
+				</div> <!-- end .text -->
 
+			</section> <!-- end .hero -->
 
-			</div>
+			<section class="values">
+			</section>
 
-			<div class="location">Ashland, <abbr title="Kentucky">KY</abbr></div>
+			<section class="leadership">
+			</section>
 
-		</div> <!-- end .hero -->
+			<section class="give">
+			</section>
+
+		</main>
+
+		<footer>
+
+		</footer>
 
 		<!-- build:js assets/js/app.min.js -->
 		<script src="assets/js/app.js"></script>

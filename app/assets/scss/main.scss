@@ -14,11 +14,13 @@ Author URI: http://thebrettsmith.com
 @import "base/flexbox";
 
 // Components
-//@import "components/buttons";
+@import "components/buttons";
+// @import "components/modals";
+// @import "components/connect-modal";
 
 // Layout
-// @import "layout/header";
-// @import "layout/navigation";
+@import "layout/header";
+@import "layout/navigation";
 // @import "layout/footer";
 
 // Sections
