@@ -20,6 +20,11 @@ header {
   z-index: 999;
   transform: translateY(1rem);
 
+  @include breakpoint(small) {
+    padding: 0 5%;
+    transform: translateY(0.5rem);
+  }
+
   .logo {
     width: 48px;
 

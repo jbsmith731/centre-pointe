@@ -17,7 +17,7 @@ body {
 h1, h2, h3, h4 {
 	margin: 0;
 	line-height: 1;
-	color: $white;
+	color: $black;
 
 	@include breakpoint(small) { line-height: 2rem; }
 }
@@ -33,16 +33,33 @@ h1 {
 }
 
 h2 {
-	font-size: 1.5rem;
-	font-weight: 400;
-	color: $white;
+	text-transform: uppercase;
+	letter-spacing: 0.1em;
+	font-size: 2rem;
+	font-weight: 300;
+	position: relative;
+	padding-bottom: 1rem;
 
-	@include breakpoint(small) { font-size: 1rem; }
+	&::after {
+		content: "";
+		position: absolute;
+		right: 0;
+		bottom: 0;
+		left: 0;
+		height: 2px;
+		width: 4rem;
+		background-color: $red;
+		margin: auto;
+	}
 }
 
-// h3 {
-//
-// }
+h3 {
+	text-transform: uppercase;
+	letter-spacing: 0.1em;
+	font-size: 1.5rem;
+	font-weight: 400;
+	margin-bottom: 1.5rem;
+}
 //
 // h4 {
 //
@@ -54,11 +71,16 @@ a {
 	transition: all 0.4s $easeOutQuint;
 }
 
+blockquote {
+	margin: 0;
+	font-style: italic;
+}
+
 .text-center { text-align: center; }
 
 .caps {
 	text-transform: uppercase;
 	letter-spacing: 0.25em;
 	font-weight: 500;
-	font-size: 0.75rem;
+	font-size: 0.75em;
 }

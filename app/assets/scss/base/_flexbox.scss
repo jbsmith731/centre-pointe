@@ -61,7 +61,6 @@ FLEXBOX
 @each $col in $col-groups {
 
 	.col-#{$col} {
-		@extend %borderbox;
 		flex-basis: percentage(1 / $col);
 
 		// if even number of columns, double width at medium breakpoint

@@ -29,6 +29,19 @@ var centrePoint = (function($) {
 			setBackground();
 		}
 
+		$('.carousel').flickity({
+		  prevNextButtons: false
+		});
+
+		// Define values labels
+		var values = ['Know God', 'Find Freedom', "Discover Purpose", "Make a Difference"];
+
+		$('li.dot').each(function(){
+			$(this).html(values[$(this).index()]);
+		})
+
+
+
 
   } // end init
 
