@@ -35,19 +35,29 @@
 
 	<body>
 
-		<header>
+		<header class="header">
 			<div class="logo">
-				<img src="assets/img/cpc-logo.svg">
+				<a href="#hero">
+					<?xml version="1.0" encoding="utf-8"?>
+					<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+						 viewBox="0 0 72 72" enable-background="new 0 0 72 72" xml:space="preserve">
+						<polygon id="outline" fill="#EF4136" points="0,0 0,72 72,72 72,59.8 68.4,57.7 65,55.7 65,65 7,65 7,7 65,7 65,16.3 68.4,14.3 72,12.2 72,0 "/>
+						<path id="c" fill="#FFFFFF" d="M36,15.9c-11.1,0-20.1,9-20.1,20.1c0,11.1,9,20.1,20.1,20.1c6.5,0,12.3-3.1,16-7.9l-6.1-3.5
+							c-2.4,2.7-5.9,4.5-9.9,4.5c-7.3,0-13.2-5.9-13.2-13.2c0-7.3,5.9-13.1,13.2-13.1c3.9,0,7.5,1.7,9.9,4.5l6.1-3.5
+							C48.3,19,42.5,15.9,36,15.9"/>
+						<polygon id="triangle" fill="#FFFFFF" points="44.8,36 71.9,51.7 71.9,20.4 "/>
+					</svg>
+				</a>
 			</div>
 
 			<nav class="nav">
-				<a href="">Who we are</a>
-				<a href="">Leadership</a>
-				<a href="">Give</a>
+				<a href="#values">Who we are</a>
+				<a href="#leadership">Leadership</a>
+				<a href="#give">Give</a>
 				<a href="">Get connected</a>
 			</nav>
 
-			<a href="" class="burger">
+			<a href="javascript:centrePointe.toggleNav('.nav')" class="burger">
 				<svg width="24px" height="24px">
 					<rect id="top" x="0" y="5" width="24px" height="2px" fill="#ffffff"/>
 					<rect id="middle" x="0" y="11" width="24px" height="2px" fill="#ffffff"/>
@@ -59,7 +69,7 @@
 
 		<main>
 
-			<section class="hero flex justify-center align-center">
+			<section class="hero flex justify-center align-center" id="hero">
 
 				<div class="video-container">
 					<video class="video" loop autoplay="true" preload="auto" muted="true" data-src="cpc-hero">
@@ -76,9 +86,11 @@
 
 			</section> <!-- end .hero -->
 
-			<section class="values">
+			<section class="values" id ="values">
 
 				<h2 class="text-center">Who we are</h2>
+
+				<div class="directions">&larr; Swipe &rarr;</div>
 
 				<div class="carousel" data-flickity>
 
@@ -145,15 +157,66 @@
 
 			</section>
 
-			<section class="leadership">
+			<section class="leadership" id="leadership">
+
+				<div class="left">
+					<div class="text">
+
+						<img class="sm-img" src="assets/img/leadership-1-sm.jpg" alt="Zach and Jana Daniels&mdash;Paster of Centre Pointe Church">
+
+						<h2 class="heading-left">Leadership</h2>
+
+						<p>For the past 7 years, Zach and Jana Daniels have served in full time ministry with several great churches
+							across the United States. During that time, God laid on their heart the desire to plant a church in Zach&lsquo;s
+							hometown of Ashland, KY. The decision to finally make the move back to the Bluegrass State didn't happen
+							until the summer of 2016.
+						</p>
+
+						<p>While there are many churches in the tri-state area of Ashland, KY and surrounding communities, there
+							are even more unchurched people. Their passion is not just to create a church where those folks will want
+							attend, but where they will connect with God and have a desire to become a devoted follower of Christ.
+							A community of believers who believe that Jesus is the hope for the world, where the broken are healed,
+							the lost are found, and the captive are set free.
+						</p>
+
+				</div>
+			</div>
+
+				<div class="right"></div>
 			</section>
 
-			<section class="give">
+			<section class="give" id="give">
+
+				<div class="text">
+
+					<h2>Give</h2>
+
+					<p>Help us share that HOPE IS ALIVE and God is wanting to do great things through the local church and people of Ashland, Kentucky.
+						Consider giving today!</p>
+
+					<a class="btn btn-black" href="https://give.church/sc4n14j">Give Now</a>
+
+				</div>
+
 			</section>
 
 		</main>
 
 		<footer>
+
+			<div class="logo">
+				<a href="#hero">
+					<?xml version="1.0" encoding="utf-8"?>
+					<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+						 viewBox="0 0 72 72" enable-background="new 0 0 72 72" xml:space="preserve">
+						<polygon id="outline" fill="#EF4136" points="0,0 0,72 72,72 72,59.8 68.4,57.7 65,55.7 65,65 7,65 7,7 65,7 65,16.3 68.4,14.3 72,12.2 72,0 "/>
+						<path id="c" fill="#333333" d="M36,15.9c-11.1,0-20.1,9-20.1,20.1c0,11.1,9,20.1,20.1,20.1c6.5,0,12.3-3.1,16-7.9l-6.1-3.5
+							c-2.4,2.7-5.9,4.5-9.9,4.5c-7.3,0-13.2-5.9-13.2-13.2c0-7.3,5.9-13.1,13.2-13.1c3.9,0,7.5,1.7,9.9,4.5l6.1-3.5
+							C48.3,19,42.5,15.9,36,15.9"/>
+						<polygon id="triangle" fill="#333333" points="44.8,36 71.9,51.7 71.9,20.4 "/>
+					</svg>
+				</a>
+			</div>
 
 		</footer>
 

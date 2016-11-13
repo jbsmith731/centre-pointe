@@ -13,32 +13,35 @@ body {
 	margin:0px;
 }
 
-body.body-modal-open { overflow:hidden; }
+body.body-modal-open,
+body.nav-open { overflow:hidden; }
 
 .container {
 	margin:auto;
-	width: $container;
+	// width: 90%;
 	position:relative;
-
-	@include breakpoint(large) {
-		width:$container-large;
-	}
-	@include breakpoint(medium) {
-		width:$container-medium;
-	}
-	@include breakpoint(small) {
-		width:$container-small;
-	}
+	//
+	// @include breakpoint(large) {
+	// 	width:$container-large;
+	// }
+	// @include breakpoint(medium) {
+	// 	width:$container-medium;
+	// }
+	// @include breakpoint(small) {
+	// 	width:$container-small;
+	// }
 }
 
 img { max-width:100%; }
+
+svg { display: block; }
 
 [aria-hidden="true"] { visibility: hidden; }
 
 section {
 	padding: 8rem 0;
 
-	@include breakpoint(small) { padding: 6rem 0;}
+	@include breakpoint(medium) { padding: 6rem 0;}
 }
 
 .list-unstyled {

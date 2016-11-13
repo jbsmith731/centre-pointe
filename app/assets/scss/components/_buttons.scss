@@ -17,9 +17,20 @@ BUTTONS
   text-decoration: none;
   border: 1px solid $white;
   transition: all 0.3s $easeOutQuint;
+  min-width: 236px;
 
   &:hover {
     background-color: $white;
     color: $black;
+  }
+}
+
+.btn.btn-black {
+  color: $black;
+  border: 1px solid $black;
+
+  &:hover {
+    background-color: $black;
+    color: $white;
   }
 }

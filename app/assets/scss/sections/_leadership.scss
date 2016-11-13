@@ -1,0 +1,60 @@
+/*
+
+-------------------------------------------------------------
+
+LEADERSHIP STYLES
+
+*/
+
+.leadership {
+  display: flex;
+  flex-direction: row;
+  min-height: 100vh;
+  padding: 0;
+
+  @include breakpoint(medium) {
+    min-height: initial;
+    border-top: 1px solid $grey-01;
+    padding: 6rem 0;
+  }
+
+  .text {
+    width: 86%;
+    max-width: 560px;
+    height: inherit;
+
+  }
+
+  .left,
+  .right {
+    width: 50%;
+    height: inherit;
+  }
+
+  .left {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    @include breakpoint(medium) { width: 100%; }
+  }
+
+  .right {
+    background-image: url("../img/leadership-1.jpg");
+    background-position: left center;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    @include breakpoint(medium) {display: none; }
+  }
+
+  .sm-img {
+    display: none;
+
+    @include breakpoint(medium) {
+      display: block;
+      margin-bottom: 3rem;
+    }
+  }
+}

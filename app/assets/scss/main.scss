@@ -25,8 +25,10 @@ Author URI: http://thebrettsmith.com
 // Layout
 @import "layout/header";
 @import "layout/navigation";
-// @import "layout/footer";
+@import "layout/footer";
 
 // Sections
 @import "sections/hero";
 @import "sections/values";
+@import "sections/leadership";
+@import "sections/give";
