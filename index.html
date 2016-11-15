@@ -30,28 +30,190 @@
 
 	<body>
 
-		<div class="hero flex justify-center align-center">
-
-			<div class="video-container">
-				<video class="video" loop autoplay="true" preload="auto" muted="true" data-src="cpc-hero">
-				</video>
+		<header class="header">
+			<div class="logo">
+				<a href="#hero">
+					<?xml version="1.0" encoding="utf-8"?>
+					<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+						 viewBox="0 0 72 72" enable-background="new 0 0 72 72" xml:space="preserve">
+						<polygon id="outline" fill="#EF4136" points="0,0 0,72 72,72 72,59.8 68.4,57.7 65,55.7 65,65 7,65 7,7 65,7 65,16.3 68.4,14.3 72,12.2 72,0 "/>
+						<path id="c" fill="#FFFFFF" d="M36,15.9c-11.1,0-20.1,9-20.1,20.1c0,11.1,9,20.1,20.1,20.1c6.5,0,12.3-3.1,16-7.9l-6.1-3.5
+							c-2.4,2.7-5.9,4.5-9.9,4.5c-7.3,0-13.2-5.9-13.2-13.2c0-7.3,5.9-13.1,13.2-13.1c3.9,0,7.5,1.7,9.9,4.5l6.1-3.5
+							C48.3,19,42.5,15.9,36,15.9"/>
+						<polygon id="triangle" fill="#FFFFFF" points="44.8,36 71.9,51.7 71.9,20.4 "/>
+					</svg>
+				</a>
 			</div>
 
-			<div class="text">
+			<nav class="nav">
+				<a href="#values">Who we are</a>
+				<a href="#leadership">Leadership</a>
+				<a href="#give">Give</a>
+				<a href="mailto:info@centrepointe.church">Get connected</a>
+			</nav>
 
-				<div class="logo flex row">
-					<img src="assets/img/cpc-logo.svg" />
-					<h1>CentrePointe.Church</h1>
+			<a href="javascript:centrePointe.toggleNav('.nav')" class="burger">
+				<svg width="24px" height="24px">
+					<rect id="top" x="0" y="5" width="24px" height="2px" fill="#ffffff"/>
+					<rect id="middle" x="0" y="11" width="24px" height="2px" fill="#ffffff"/>
+					<rect id="bottom" x="0" y="17" width="24px" height="2px" fill="#ffffff"/>
+				</svg>
+			</a>
+
+		</header>
+
+		<main>
+
+			<section class="hero flex justify-center align-center" id="hero">
+
+				<div class="video-container">
+					<video class="video" loop autoplay="true" preload="auto" muted="true" data-src="cpc-hero">
+					</video>
 				</div>
 
-				<h2>March 2017</h2>
+				<div class="text">
+					<h1>Hope is Alive</h1>
+					<p>Centre Pointe Church is a new start church located in
+						Ashland, Kentucky launching March 2017.
+					</p>
+					<a class="btn" href="mailto:info@centrepointe.church">Get Connected</a>
+				</div> <!-- end .text -->
+
+			</section> <!-- end .hero -->
+
+			<section class="values" id ="values">
+
+				<h2 class="text-center">Who we are</h2>
+
+				<div class="directions">&larr; Swipe &rarr;</div>
+
+				<div class="carousel" data-flickity>
+
+					<div class='carousel-cell'>
+						<h3>Know God</h2>
+						<p>We love modern worship music and great biblical teaching that
+							we can apply to our daily lives...and you can expect to find both at CPC during
+							our Sunday experiences.
+						</p>
+
+						<p>Come as you are. Come expecting God to move. Come ready to see our community forever changed.</p>
+
+						<blockquote>(Matthew 7:21-23) “Not everyone who says to me, ‘Lord, Lord,’ will enter the kingdom of heaven,
+							but only he who does the will of my Father who is in heaven. Many will say to me on that day,
+							‘Lord, Lord, did we not prophesy in your name, and in your name drive out demons and perform many
+							miracles?’ Then I will tell them plainly, ‘I never knew you.’”
+						</blockquote>
+					</div>
+
+					<div class="carousel-cell">
+						<h3>Find Freedom</h3>
+						<p>We believe that life is better together. We were not created to be isolated and
+							"do life" on our own. We believe in Life Groups where people can come together, become family, and see
+							 God do a work in their lives.
+						 </p>
+
+						 <blockquote>
+							 (James 5:16) Therefore confess your sins to each other and pray for each other so that you may be healed.
+						 </blockquote>
+					</div>
+
+					<div class="carousel-cell">
+						<h3>Discover Purpose</h3>
+						<p>God has an incredible purpose for your life, and the CentrePointe Growth Track is designed to help you connect
+							with that purpose. On the Growth Track, you will spend four Sundays diving into what it looks like to follow Jesus,
+							connect to the church, discover your purpose and then make a difference with your life.
+						</p>
+
+						<ul class="list-unstyled">
+							<li>101 Membership</li>
+							<li>201 Essentials &ndash; How to have a vibrant relationship with Christ</li>
+							<li>301 Discovery &ndash; understanding our design</li>
+							<li>401 Dream Team &ndash; First service opportunity</li>
+						</ul>
+
+						<blockquote>
+							(Ephesians 4:7-13)
+							(Romans 12:6) We have different gifts, according to the grace given to each of us.
+						</blockquote>
+					</div>
+
+					<div class="carousel-cell">
+						<h3>Make a Difference</h3>
+						<p>We want you to be involved with serving...and we have a place for YOU! There is no greater joy to be experienced
+							than the joy of making a difference. It’s about people achieving a Glory that outweighs the cares of life. It&lsquo;s
+							about doing something eternal.
+						</p>
+
+						<blockquote>
+							(1 Peter 4:10 NLT) God has given gifts to each of you from his great variety of spiritual gifts. Manage
+							them well so that God’s generosity can flow through you.
+						</blockquote>
 
 
+			</section>
+
+			<section class="leadership" id="leadership">
+
+				<div class="left">
+					<div class="text">
+
+						<img class="sm-img" src="assets/img/leadership-1-sm.jpg" alt="Zach and Jana Daniels&mdash;Paster of Centre Pointe Church">
+
+						<h2 class="heading-left">Leadership</h2>
+
+						<p>For the past 7 years, Zach and Jana Daniels have served in full time ministry with several great churches
+							across the United States. During that time, God laid on their heart the desire to plant a church in Zach&lsquo;s
+							hometown of Ashland, KY. The decision to finally make the move back to the Bluegrass State didn't happen
+							until the summer of 2016.
+						</p>
+
+						<p>While there are many churches in the tri-state area of Ashland, KY and surrounding communities, there
+							are even more unchurched people. Their passion is not just to create a church where those folks will want
+							attend, but where they will connect with God and have a desire to become a devoted follower of Christ.
+							A community of believers who believe that Jesus is the hope for the world, where the broken are healed,
+							the lost are found, and the captive are set free.
+						</p>
+
+				</div>
 			</div>
 
-			<div class="location">Ashland, <abbr title="Kentucky">KY</abbr></div>
+				<div class="right"></div>
+			</section>
 
-		</div> <!-- end .hero -->
+			<section class="give" id="give">
+
+				<div class="text">
+
+					<h2>Give</h2>
+
+					<p>Help us share that HOPE IS ALIVE and God is wanting to do great things through the local church and people of Ashland, Kentucky.
+						Consider giving today!</p>
+
+					<a class="btn btn-black" href="https://give.church/sc4n14j" target="_blank">Give Now</a>
+
+				</div>
+
+			</section>
+
+		</main>
+
+		<footer>
+
+			<div class="logo">
+				<a href="#hero">
+					<?xml version="1.0" encoding="utf-8"?>
+					<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+						 viewBox="0 0 72 72" enable-background="new 0 0 72 72" xml:space="preserve">
+						<polygon id="outline" fill="#EF4136" points="0,0 0,72 72,72 72,59.8 68.4,57.7 65,55.7 65,65 7,65 7,7 65,7 65,16.3 68.4,14.3 72,12.2 72,0 "/>
+						<path id="c" fill="#333333" d="M36,15.9c-11.1,0-20.1,9-20.1,20.1c0,11.1,9,20.1,20.1,20.1c6.5,0,12.3-3.1,16-7.9l-6.1-3.5
+							c-2.4,2.7-5.9,4.5-9.9,4.5c-7.3,0-13.2-5.9-13.2-13.2c0-7.3,5.9-13.1,13.2-13.1c3.9,0,7.5,1.7,9.9,4.5l6.1-3.5
+							C48.3,19,42.5,15.9,36,15.9"/>
+						<polygon id="triangle" fill="#333333" points="44.8,36 71.9,51.7 71.9,20.4 "/>
+					</svg>
+				</a>
+			</div>
+
+		</footer>
 
 		<script src="assets/js/app.min.js"></script>
 
