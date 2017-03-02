@@ -20,9 +20,9 @@ header {
   padding: 0 3rem;
   z-index: 999;
   color: $white;
-  transition: background-color 0.5s $easeOutQuint, transform 0.3s $easeOutQuint;
 
-  @include breakpoint(small) { padding: 0 5%; }
+
+  @include breakpoint(medium) { padding: 0 5%; }
 
   .logo { width: 48px; }
 
@@ -32,7 +32,7 @@ header {
 
     rect { transition: all 0.6s $easeOutQuint; }
 
-    @include breakpoint(small) { display: block;}
+    @include breakpoint(medium) { display: block;}
   }
 
   #c, #triangle { transition: fill 0.4s $easeOutQuint; }
@@ -43,13 +43,14 @@ header.header-filled {
   position: fixed;
   top: 0;
   border-bottom: 1px solid $grey-01;
+  transition: background-color 0.5s $easeOutQuint, transform 0.3s $easeOutQuint;
 
-  @include breakpoint(small) { position: absolute; top: 2.5rem; background-color: transparent; border: none;}
+  @include breakpoint(medium) { position: absolute; top: 2.5rem; background-color: transparent; border: none;}
 
   #c, #triangle {
     fill: $black;
 
-    @include breakpoint(small) { fill: $white; }
+    @include breakpoint(medium) { fill: $white; }
   }
 
   nav a {
@@ -61,7 +62,7 @@ header.header-filled {
   .burger rect {
     fill: $black;
 
-    @include breakpoint(small) { fill: $white; }
+    @include breakpoint(medium) { fill: $white; }
   }
 }
 
