@@ -52,7 +52,14 @@ HERO STYLES
     width: 90%;
     max-width: 600px;
 
-    .btn { margin-top: 4rem; }
+    .btn {
+      margin-top: 4rem;
+
+      @media(max-width: 320px) {
+        padding: 0 1rem;
+        letter-spacing: 0;
+      }
+    }
   }
 
   h1 span {
@@ -62,11 +69,11 @@ HERO STYLES
     margin-bottom: 1rem;
     text-transform: uppercase;
     letter-spacing: 0.2em;
+
+    @media(max-width: 320px) {
+      font-size: 1rem;
+    }
   }
-
-
-
-
 
 } // end .hero
 
