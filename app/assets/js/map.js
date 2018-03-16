@@ -165,18 +165,17 @@ var map = (function($) {
 		  }
 		]
 
-		var myPos = {lat: 38.3783157, lng: -82.708581},
-				image = {
-					url: '../assets/img/icon-marker.svg',
-					size: new google.maps.Size(40, 40),
-					origin: new google.maps.Point(0,0),
-					anchor: new google.maps.Point(8, 12)
-				}
-
+		var myPos = { lat: 38.417575, lng: -82.7021442 },
+			image = {
+				url: '../assets/img/icon-marker.svg',
+				size: new google.maps.Size(40, 40),
+				origin: new google.maps.Point(0,0),
+				anchor: new google.maps.Point(8, 12)
+			}
 
     var map = new google.maps.Map(document.getElementById('map'), {
       center: myPos,
-      zoom: 15,
+      zoom: 17,
 			styles: style,
 			scrollwheel: false,
     });
